@@ -6,7 +6,7 @@ class AddColumnsToPage < ActiveRecord::Migration
     
     Page.reset_column_information
     Page.all.each do |page|
-      page.update_attributes({:sitemap => true, :change_frequency => "weekly", :priority => "0.5"})
+      page.update_attributes({:sitemap => true, :change_frequency => "weekly", :priority => "1.0"})
     end
   end
 
