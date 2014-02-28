@@ -2,7 +2,7 @@
   %tr
     %td
     %td
-      = f.check_box :sitemap, {@page.new_record? && :checked => 'checked'}
+      = f.check_box :sitemap
       = f.label :sitemap, t('appear_in_sitemap')
       = f.select :change_frequency, SitemapXmlExtension::CHANGE_FREQUENCY_OPTIONS, {@page.new_record? && :selected => "weekly"}, :style => "margin-left:3%"
       = f.label t('change_frequency')
